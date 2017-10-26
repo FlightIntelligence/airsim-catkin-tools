@@ -25,7 +25,7 @@ def move_folders(orig_src_dir, catkin_src_dir, pkg_name, folders, display_name):
     print("***** COPYING %s *****" % display_name)
     pkg_dir = catkin_src_dir + pkg_name + "/"
     if not os.path.exists(pkg_dir):
-        print("Directory \"" + pkg_name + "\" does not exists in the catkin workspace."
+        print("Directory \"" + pkg_name + "\" does not exists in the catkin workspace src folder."
                                                " Please clone the correct repository from GitHub before continuing.")
         return
     for source, target in folders:
